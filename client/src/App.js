@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     // Set API base URL to Render backend
-    axios.defaults.baseURL = 'https://nex-stream-backend.onrender.com/api';
+    axios.defaults.baseURL = 'https://nex-stream.onrender.com/api';
     axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
     fetchLibrary();
   }, []);
